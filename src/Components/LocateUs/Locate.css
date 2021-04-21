@@ -1,0 +1,124 @@
+.locate-container {
+  /* width: 100vw; */
+  height: 450px;
+  background-color: #62d398;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.locate-left img {
+  height: 450px;
+  position: absolute;
+  left: -225px;
+}
+.locate-content {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto 20px;
+  color: white;
+}
+.locate-title {
+  font-size: 3rem;
+}
+.locate-logo {
+  filter: brightness(0) invert(1);
+}
+
+.locate-content p {
+  font-size: 2rem;
+}
+
+.search-container {
+  margin: 20px;
+}
+.search-container input {
+  width: 400px;
+  height: 50px;
+  border-radius: 25px 0 0 25px;
+  border: none;
+}
+.search-container input[type="text"]:focus {
+  outline: none;
+}
+
+.search-container .locate-btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #ce0024;
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
+.search-container .locate-btn .locate-btnName {
+  color: white;
+  padding-left: 20px;
+}
+.locate-search-logo {
+  color: white;
+}
+.locate-right {
+  /* overflow: hidden; */
+  position: relative;
+}
+.locate-right img {
+  position: absolute;
+  left: -125px;
+}
+
+@media only screen and (max-width: 842px) {
+  .locate-right img {
+    display: none;
+  }
+  .locate-left img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .locate-right img {
+    display: none;
+  }
+  .locate-left img {
+    display: none;
+  }
+
+  .search-container input {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+  }
+  .search-container .locate-btn {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: #ce0024;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .locate-right img {
+    display: none;
+  }
+  .locate-left img {
+    display: none;
+  }
+
+  .search-container input {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+  }
+  .search-container .locate-btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #ce0024;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+  }
+}
